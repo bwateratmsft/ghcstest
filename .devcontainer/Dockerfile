@@ -1,5 +1,5 @@
 # Note: You can use any Debian/Ubuntu based image you want. 
-FROM mcr.microsoft.com/dotnet/sdk:5.0
+FROM node:12-buster
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
