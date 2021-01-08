@@ -1,5 +1,5 @@
 # Note: You can use any Debian/Ubuntu based image you want. 
-FROM python:3.8
+FROM python:3.8-buster
 
 # [Option] Install zsh
 ARG INSTALL_ZSH="true"
