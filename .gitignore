@@ -1,3 +1,5 @@
-obj/*
-bin/*
-node_modules/*
+obj
+bin
+node_modules
+.venv
+__pycache__
