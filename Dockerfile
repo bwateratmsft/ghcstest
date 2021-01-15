@@ -9,10 +9,10 @@ COPY ["ghcstest.csproj", "./"]
 RUN dotnet restore "ghcstest.csproj"
 COPY . .
 WORKDIR "/src/."
-RUN dotnet build "ghcstest.csproj" -c Release -o /app/build
+RUN dotnet build "ghcstest.csproj" -c Debug -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "ghcstest.csproj" -c Release -o /app/publish
+RUN dotnet publish "ghcstest.csproj" -c Debug -o /app/publish
 
 FROM base AS final
 WORKDIR /app
