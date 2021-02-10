@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  ghcstest:
+    image: ghcstest
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8090:8090
